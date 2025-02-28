@@ -1,0 +1,196 @@
+
+.title{
+    text-align: left;
+}
+/* General body styles */
+body {
+    margin: 0px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+    
+/* Header Styles */
+h1 {
+    color: rgb(13, 11, 11);
+    text-align: center;
+    margin-top: 20px; /* Add space above the header */
+}
+
+h2 {
+    color: rgb(24, 16, 16);
+    text-align: center;
+    margin-top: 20px; /* Add space above the header */
+}
+
+/* Navbar Styles */
+.navbar ul {
+    list-style-type: none;
+    background-color: rgb(26, 22, 22);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    text-align: left; /* Center align the navbar items */
+    border-bottom: 2px solid gold; /* Add a gold border at the bottom of the navbar */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block; /* Change from block to inline-block */
+    text-align: left;
+}
+
+.navbar a:hover {
+    background-color: gold;
+}
+
+.navbar li {
+    display: inline-block; /* Change from float to inline-block for centering */
+}
+
+/* Main Content Styles */
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top: 2px solid gold; /* Add a gold border at the top of the main content */
+    border-bottom: 2px solid gold; /* Add a gold border at the bottom of the main content */
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .navbar a {
+        padding: 12px; /* Adjust padding for mobile */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .navbar a {
+        padding: 14px; /* Adjust padding for tablet */
+    }
+}
+.text-block {
+    height: 100;
+    width: 100;
+    border: 6px double black;
+    padding: 5px;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+.text-block:hover{
+    transform: scale(1.02);
+    background-color: gold;
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center align content */
+    align-items: center;
+    gap: 30px;
+}
+
+/* Flexbox styles for smaller screens (Tablets and Phones) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack logos vertically on smaller screens */
+        justify-content: center;
+    }
+}
+
+/* Default Flexbox styles (Desktop) */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Align logos horizontally on larger screens */
+    }
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    gap: 30px;  /* Increased gap between logos */
+    justify-content: center; /* Center logos horizontally */
+}
+.logo-container a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Common logo styles */
+.logo {
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;  /* Increased width */
+    height: 120px;  /* Increased height */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 3rem;  /* Increased font size */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for logos */
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Telegram logo color */
+.telegram {
+    background-color: black;
+    color: white;
+}
+
+/* Instagram logo color */
+.instagram {
+    background-color: black;
+    color: white;
+}
+
+/* X (Twitter) logo color */
+.x-logo {
+    background-color: #000000;  /* Change to X/Twitter's new color */
+    color: white;
+}
+
+/* Adjust SVG styles */
+.x-logo svg {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    stroke: white; /* Make sure the stroke is white */
+}
+a:link {
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    background-color: transparent;
+}
+a:active {
+    color:gold;
+    background-color: transparent;
+    text-decoration: underline;
+}
+footer{
+    text-align: right;
+    height: 30px;
+    color:white;
+    background-color: black;
+}
